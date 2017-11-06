@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- CSS do Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+
+	<!-- CSS do grupo -->
+	 <link href="tabela.css" rel="stylesheet" />
+
+	<!-- Arquivos js -->
+	<script src="js/popper.js"></script>
+	<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="tabela.js"  type="text/javascript"></script>
+
+	<!-- Fontes e icones -->
+	<link href="css/nucleo-icons.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Developers</h3>
+						<div class="pull-right">
+							<span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<button>filtro</button>
+							</span>
+						</div>
+					</div>
+					<div class="panel-body">
+						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
+					</div>
+					<table class="table table-hover" id="dev-table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Kilgore</td>
+								<td>Trout</td>
+								<td>kilgore</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Bob</td>
+								<td>Loblaw</td>
+								<td>boblahblah</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Holden</td>
+								<td>Caulfield</td>
+								<td>penceyreject</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+</body>
+</html>
